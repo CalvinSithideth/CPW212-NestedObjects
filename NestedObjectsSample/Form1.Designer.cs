@@ -40,6 +40,7 @@
             this.LstInstructors.Name = "LstInstructors";
             this.LstInstructors.Size = new System.Drawing.Size(245, 407);
             this.LstInstructors.TabIndex = 0;
+            this.LstInstructors.SelectedIndexChanged += new System.EventHandler(this.LstInstructors_SelectedIndexChanged);
             // 
             // LstCourses
             // 
@@ -48,6 +49,7 @@
             this.LstCourses.Name = "LstCourses";
             this.LstCourses.Size = new System.Drawing.Size(245, 407);
             this.LstCourses.TabIndex = 1;
+            this.LstCourses.SelectedIndexChanged += new System.EventHandler(this.LstCourses_SelectedIndexChanged);
             // 
             // LstStudents
             // 
@@ -67,6 +69,7 @@
             this.Controls.Add(this.LstInstructors);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
